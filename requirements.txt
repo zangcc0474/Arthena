@@ -1,0 +1,7 @@
+scikit-learn==0.18.
+scipy==1.0.0
+pandas==0.18.1
+seaborn==0.7.1
+numpy==1.13.3
+matplotlib==1.5.1
+plotly==2.0.9
