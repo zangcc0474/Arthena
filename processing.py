@@ -10,7 +10,7 @@ def data_processing(filename):
     
     # Modify the year_of_execution column
     dataset['year_of_execution'] = dataset.year_of_execution.str.extract(r"(\d{4})")
-    dataset.ix[pd.to_numeric(dataset['year_of_execution'])>2016,'year_of_execution'] = 2016
+    dataset.ix[pd.to_numeric(dataset['year_of_execution'])>2016,'year_of_execution'] = '2016'
     
     # Add two new columns which are auction_year and auction_month
     dataset['auction_year'] = dataset['auction_date'].str.split('-').str[0]
